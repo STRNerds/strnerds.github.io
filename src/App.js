@@ -1,15 +1,49 @@
-import './App.css';
+import { Box } from "@mui/joy";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          <img src="https://media.discordapp.net/attachments/888535182737555457/1105920239826374807/20230510_103633.jpg?ex=6644fafc&is=6643a97c&hm=eddfb094dc6d512d051a4a8c904d2e653e5429b896da1ac65b766d8a8db2c445&=&format=webp&width=511&height=682" />
-          <code>Nerds from STR</code>
-        </p>
-      </header>
-    </div>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Box
+        className="navbar"
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          width: '95%',
+          padding: 0.1,
+        }}
+      >
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'flex-start', // Align items to the start
+            alignItems: 'center',
+          }}
+        >
+          <img src="nerd.png" className="nerdNavbar" />
+          <h3 className="homeButton" sx={{ marginBottom: '0' }}>STRNerds</h3>
+        </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'flex-end',
+            alignItems: 'center',
+            gap: 3,
+            mr: 3,
+          }}
+        >
+          <h3 className="projectsButton" sx={{ marginBottom: '0' }}>Projects</h3>
+          <h3 className="aboutUsButton" sx={{ marginBottom: '0' }}>About Us</h3>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

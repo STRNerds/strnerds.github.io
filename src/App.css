@@ -1,38 +1,45 @@
-.App {
+@import url('https://fonts.cdnfonts.com/css/whitney-sc');
+
+body {
   text-align: center;
+  background-color: #2D2A2A;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #E6E6E6;
+  width: 95%;
+  border-radius: 50px;
+  position: absolute;
+  top: 3%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeButton {
+  font-family: 'Whitney BlackSC', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  margin-left: 7%;
+  font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.projectsButton {
+  font-family: 'Whitney BlackSC', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
+  font-size: 23px;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutUsButton {
+  font-family: 'Whitney BlackSC', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
+  font-size: 23px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nerdNavbar {
+  height: 40px;
+  width: 40px;
+  margin-left: 10%;
 }
