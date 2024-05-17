@@ -77,8 +77,8 @@ function App() {
           flexDirection: "column",
           justifyContent: "center",
           justifyItems: "center",
-          mt: 17,
         }}
+        className="homeTextContainer"
       >
         <h1 className="weAre">We are</h1>
         <h1 ref={el} className="heroText" style={{ minHeight: "1.2em" }} />{" "}
@@ -86,16 +86,6 @@ function App() {
         <h1 className="description">
           Who work together to create useful <br /> and interesting software.
         </h1>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          ml: 110,
-          mt: -17.8,
-        }}
-      >
         <img src="nerdsvg.svg" className="nerdSvg" />
       </Box>
     </>

@@ -4,6 +4,7 @@
 body {
   text-align: center;
   background-color: #2D2A2A;
+  /* overflow-x: hidden */
 }
 
 .navbar {
@@ -52,7 +53,6 @@ body {
   font-style: normal;
   font-size: 40px;
   color: #E6E6E6;
-  margin-top: 15%;
   text-align: left;
   margin-left: 3%;
   margin-bottom: 0%;
@@ -86,6 +86,13 @@ body {
 
 .nerdSvg {
   height: 40%;
-  width: 40%;
   position: absolute;
+  right: 4%;
+}
+
+.homeTextContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
 }
