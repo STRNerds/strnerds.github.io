@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ProjectPage from "./ProjectPage";
-import MainMenu from "./MainMenu";
+import ProjectPage from "./components/ProjectPage";
+import MainMenu from "./components/MainMenu";
 
 function App() {
-    return (
-        <>
-            <Router>
-                <Routes>
-                    <Route path="/" element={<MainMenu />} />
-                    <Route path="/project" element={<ProjectPage />} />
-                </Routes>
-            </Router>
-        </>
-    );
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainMenu />} />
+          <Route path="/project" element={<ProjectPage />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
 export default App;
