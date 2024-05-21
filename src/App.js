@@ -38,7 +38,7 @@ function App() {
             justifyContent: "space-between",
             alignItems: "center",
             width: "95%",
-            padding: 0.1,
+            padding: "0.1vh",
           }}
         >
           <Box
@@ -58,8 +58,8 @@ function App() {
               display: "flex",
               justifyContent: "flex-end",
               alignItems: "center",
-              gap: 3,
-              mr: 4,
+              gap: "7vh",
+              mr: "2vh",
             }}
           >
             <h3 className="projectsButton" sx={{ marginBottom: "0" }}>
