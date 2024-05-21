@@ -38,7 +38,7 @@ function MainMenu() {
                         justifyContent: "space-between",
                         alignItems: "center",
                         width: "95%",
-                        padding: "0.1vh",
+                        padding: "0vh",
                     }}
                 >
                     <Box
@@ -50,7 +50,7 @@ function MainMenu() {
                     >
                         {/* <img src="nerd.png" className="nerdNavbar" /> */}
                         <h3 className="homeButton" sx={{ marginBottom: "0" }}>
-                            STRNerds
+                            <a href="/">STRNerds</a>
                         </h3>
                     </Box>
                     <Box
@@ -58,15 +58,15 @@ function MainMenu() {
                             display: "flex",
                             justifyContent: "flex-end",
                             alignItems: "center",
-                            gap: "7vh",
+                            gap: "8vh",
                             mr: "2vh",
                         }}
                     >
                         <h3 className="projectsButton" sx={{ marginBottom: "0" }}>
-                            Projects
+                            <a href="/projects">Projects</a>
                         </h3>
                         <h3 className="aboutUsButton" sx={{ marginBottom: "0" }}>
-                            About Us
+                            <a href="/about">About Us</a>
                         </h3>
                     </Box>
                 </Box>
