@@ -3,7 +3,7 @@ import Typed from "typed.js";
 import React from "react";
 import "./MainMenu.css";
 
-function MainMenu() {
+const MainMenu = () => {
   const el = React.useRef(null);
 
   React.useEffect(() => {
@@ -23,52 +23,6 @@ function MainMenu() {
 
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Box
-          className="navbar"
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            width: "95%",
-            padding: "0.1vh",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-              alignItems: "center",
-            }}
-          >
-            <h3 className="homeButton" sx={{ marginBottom: "0" }}>
-              STRNerds
-            </h3>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-              gap: "7vh",
-              mr: "2vh",
-            }}
-          >
-            <h3 className="projectsButton" sx={{ marginBottom: "0" }}>
-              Projects
-            </h3>
-            <h3 className="aboutUsButton" sx={{ marginBottom: "0" }}>
-              About Us
-            </h3>
-          </Box>
-        </Box>
-      </Box>
       <Box
         sx={{
           display: "flex",
