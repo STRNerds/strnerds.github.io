@@ -2,9 +2,32 @@ import { Box } from "@mui/joy";
 import Typed from "typed.js";
 import React from "react";
 import "./MainMenu.css";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const MainMenu = () => {
   const el = React.useRef(null);
+
+  const [keysPressed, setKeysPressed] = useState([]);
+  const navigate = useNavigate();
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      setKeysPressed((keysPressed) => [...keysPressed, event.key]);
+      console.log(keysPressed);
+      if (keysPressed.join('') === 'kimixu') {
+        navigate("/kimixu");
+      }
+      if(keysPressed.length > 5) {
+        keysPressed.shift();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [keysPressed]);
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
