@@ -4,6 +4,7 @@ import ProjectPage from "./components/ProjectPage";
 import MainMenu from "./components/MainMenu";
 import Navbar from "./components/Navbar";
 import AboutUsPage from "./components/AboutUsPage";
+import SecretPage from "./components/SecretPage";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<MainMenu />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/kimixu" element={<SecretPage />}/>
         </Routes>
       </Router>
     </>
