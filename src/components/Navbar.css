@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .navbar {
+  width: 100%;
+  height: 12%;
+  position: fixed;
+  top: 0%;
+  background-color: #2d2a2a;
+}
+
+.navbarContent {
   width: 95%;
   position: fixed;
   top: 4%;
