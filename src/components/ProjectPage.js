@@ -8,6 +8,6 @@ const ProjectPage = () => {
       <p>Project description...</p>
     </div>
   );
-}
+};
 
 export default ProjectPage;
