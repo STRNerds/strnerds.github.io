@@ -4,31 +4,25 @@ import React from "react";
 import "./MainMenu.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
 const MainMenu = () => {
   const el = React.useRef(null);
-
   const [keysPressed, setKeysPressed] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
     const handleKeyDown = (event) => {
-      setKeysPressed((keysPressed) => [...keysPressed, event.key]);
-      console.log(keysPressed);
-      if (keysPressed.join('') === 'kimixu') {
-        navigate("/kimixu");
+      keysPressed.push(event.key);
+      if (keysPressed.join("") === "kimixu") {
+        navigate("/ihuwiufhauifawhfuiwahfihfiu");
       }
-      if(keysPressed.length > 5) {
+      if (keysPressed.length > 5) {
         keysPressed.shift();
       }
     };
-
-    window.addEventListener('keydown', handleKeyDown);
-
+    window.addEventListener("keydown", handleKeyDown);
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, [keysPressed]);
-
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: ["NERDS", "DEVELOPERS", "STUDENTS"],
@@ -38,12 +32,10 @@ const MainMenu = () => {
       loop: true,
       showCursor: false,
     });
-
     return () => {
       typed.destroy();
     };
   }, []);
-
   return (
     <>
       <Box
@@ -64,6 +56,5 @@ const MainMenu = () => {
       </Box>
     </>
   );
-}
-
+};
 export default MainMenu;

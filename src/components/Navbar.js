@@ -2,7 +2,6 @@ import { Box } from "@mui/joy";
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
 const Navbar = () => {
   return (
     <Box
@@ -42,10 +41,18 @@ const Navbar = () => {
             mr: "2vh",
           }}
         >
-          <Link to="/projects" className="projectsButton" sx={{ marginBottom: "0" }}>
+          <Link
+            to="/projects"
+            className="projectsButton"
+            sx={{ marginBottom: "0" }}
+          >
             Projects
           </Link>
-          <Link to="/about" className="aboutUsButton" sx={{ marginBottom: "0" }}>
+          <Link
+            to="/about"
+            className="aboutUsButton"
+            sx={{ marginBottom: "0" }}
+          >
             About Us
           </Link>
         </Box>
@@ -53,5 +60,4 @@ const Navbar = () => {
     </Box>
   );
 };
-
 export default Navbar;
