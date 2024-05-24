@@ -1,1 +1,33 @@
-.AboutUsHeader { font-family:"Inter",sans-serif;font-weight:600;font-style:normal;font-size:40px;color:#e6e6e6;text-align:center;margin-top:5%; } .AboutUsDescription { color:#e6e6e6;font-family:"Inter",sans-serif;font-weight:200;font-size:24px;text-align:center; } .people { display:flex;justify-content:center;} .profiles { margin:0.5%;max-width: 10vw} .pfp { border-radius:15px;height:28vh;} .profileDescription { color:#e6e6e6;font-family:"Inter", sans-serif; word-wrap: break-word;}
+.AboutUsHeader {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: #e6e6e6;
+  text-align: center;
+  margin-top: 8%;
+}
+.AboutUsDescription {
+  color: #e6e6e6;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center;
+}
+.people {
+  display: flex;
+  justify-content: center;
+}
+.profiles {
+  margin: 0.5%;
+  max-width: 10vw;
+}
+.pfp {
+  border-radius: 15px;
+  height: 28vh;
+}
+.profileDescription {
+  color: #e6e6e6;
+  font-family: "Inter", sans-serif;
+  word-wrap: break-word;
+}

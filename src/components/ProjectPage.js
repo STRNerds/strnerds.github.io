@@ -3,9 +3,9 @@ import "./ProjectPage.css";
 
 const ProjectPage = () => {
   return (
-    <div>
-      <h1>Project Title</h1>
-      <p>Project description...</p>
+    <div className="project">
+      <h1>We're cooking...</h1>
+      <p>projects coming soon</p>
     </div>
   );
 };

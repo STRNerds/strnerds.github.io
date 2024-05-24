@@ -9,13 +9,13 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={<MainMenu />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/ihuwiufhauifawhfuiwahfihfiu" element={<SecretPage />} />
         </Routes>
+        <Navbar />
       </Router>
     </>
   );

@@ -2,9 +2,11 @@ import { Box } from "@mui/joy";
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <Box
+      className="navbar"
       sx={{
         display: "flex",
         alignItems: "center",
@@ -12,12 +14,11 @@ const Navbar = () => {
       }}
     >
       <Box
-        className="navbar"
+        className="navbarContent"
         sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          width: "95%",
           padding: "0.1vh",
         }}
       >
@@ -60,4 +61,5 @@ const Navbar = () => {
     </Box>
   );
 };
+
 export default Navbar;
