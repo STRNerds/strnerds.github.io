@@ -11,6 +11,7 @@ const MainMenu = () => {
   useEffect(() => {
     const handleKeyDown = (event) => {
       keysPressed.push(event.key);
+      console.log(keysPressed);
       if (keysPressed.join("") === "kimixu") {
         navigate("/ihuwiufhauifawhfuiwahfihfiu");
       }
